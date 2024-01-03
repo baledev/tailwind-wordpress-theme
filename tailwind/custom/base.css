@@ -1,0 +1,20 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background text-foreground font-sans;
+}
+
+.nav-button > a {
+	@apply rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-4 py-2  bg-black text-white hover:bg-gray-800  border-2 border-transparent !important;
+}
